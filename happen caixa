@@ -1,0 +1,50 @@
+#include <iostream>
+#include <stdlib.h>
+
+
+using namespace std;
+
+int main () {
+
+int cincoc, dezc, vintec, cinquentac, umreal, dois, cinco, dez, vinte, cinquenta, cem, duzentos, gaveta;
+
+
+cout << "Seja bem vindo a nosso primeiro coferencia de caixa automtica! "<<endl;
+
+//MOEDAS//
+    cout << "Digite a quantidade de moedas de 0,05 " << endl;
+    cin >> cincoc;
+    cout << "Digite a quantidade de moedas de 0,10 " << endl;
+    cin >> dezc;
+    cout << "Digite a quantidade de moedas de 0,25 " << endl;
+    cin >> vintec;
+    cout << "Digite a quantidade de moedas de 0,50 " << endl;
+    cin >> cinquentac;
+    cout << "Digite a quantidade de moedas de 1,00 " << endl;
+    cin >> umreal;
+
+//NOTAS//
+    cout << "Digite a quantidade de notas de 2 " << endl;
+    cin >> dois;
+    cout << "Digite a quantidade de notas de 5 " << endl;
+    cin >> cinco;
+    cout << "Digite a quantidade de notas de 10 " << endl;
+    cin >> dez;
+    cout << "Digite a quantidade de notas de 20 " << endl;
+    cin >> vinte;
+    cout << "Digite a quantidade de notas de 50 " << endl;
+    cin >> cinquenta;
+    cout << "Digite a quantidade de notas de 100 " << endl;
+    cin >> cem;
+    cout << "Digite a quantidade de notas de 200 " << endl;
+    cin >> duzentos;
+
+    cout << "Digite a quantidade da gaveta externa (40,00 padrão) " << endl;
+    cin >> gaveta;
+    
+    cout << "Menor gaveta: " << cincoc * '0,05' << endl;
+
+
+system("pause");
+return 0;
+}
