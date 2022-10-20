@@ -7,9 +7,12 @@ using namespace std;
 int main () {
 
 int cincoc, dezc, vintec, cinquentac, umreal, dois, cinco, dez, vinte, cinquenta, cem, duzentos, gaveta;
+int moedas, notas, user;
+float cc = 0.05, dc = 0.10, vc = 0.25, ccc = 0.50, um = 1, d = 2, cn = 5, dd = 10, v = 20, cq = 50, c = 100, dz = 200;
+float total;
 
+cout << "Seja bem vindo ao assitente de caixa"<<endl;
 
-cout << "Seja bem vindo a nosso primeiro coferencia de caixa automtica! "<<endl;
 
 //MOEDAS//
     cout << "Digite a quantidade de moedas de 0,05 " << endl;
@@ -24,25 +27,49 @@ cout << "Seja bem vindo a nosso primeiro coferencia de caixa automtica! "<<endl;
     cin >> umreal;
 
 //NOTAS//
-    cout << "Digite a quantidade de notas de 2 " << endl;
+    cout << "Digite a quantidade de notas de 2,00 " << endl;
     cin >> dois;
-    cout << "Digite a quantidade de notas de 5 " << endl;
+    cout << "Digite a quantidade de notas de 5,00 " << endl;
     cin >> cinco;
-    cout << "Digite a quantidade de notas de 10 " << endl;
+    cout << "Digite a quantidade de notas de 10,00 " << endl;
     cin >> dez;
-    cout << "Digite a quantidade de notas de 20 " << endl;
+    cout << "Digite a quantidade de notas de 20,00 " << endl;
     cin >> vinte;
-    cout << "Digite a quantidade de notas de 50 " << endl;
+    cout << "Digite a quantidade de notas de 50,00 " << endl;
     cin >> cinquenta;
-    cout << "Digite a quantidade de notas de 100 " << endl;
+    cout << "Digite a quantidade de notas de 100,00 " << endl;
     cin >> cem;
-    cout << "Digite a quantidade de notas de 200 " << endl;
+    cout << "Digite a quantidade de notas de 200,00 " << endl;
     cin >> duzentos;
 
-    cout << "Digite a quantidade da gaveta externa (40,00 padrão) " << endl;
+    cout << "Digite a quantidade da gaveta externa (40,00 padrao)" << endl;
     cin >> gaveta;
-    
-    cout << "Menor gaveta: " << cincoc * '0,05' << endl;
+
+//MENOR GAVETA//
+    cout << "Menor gaveta:" << endl;
+    cout <<  cincoc * cc  << endl;
+    cout << dezc * dc << endl;
+    cout << vintec * vc << endl;
+    cout << cinquentac * ccc << endl;
+    cout << umreal * um << endl;
+    cout << "" <<endl;
+
+//MAIOR GAVETA//
+    cout << "Maior Gaveta:" <<endl;
+    cout<< dois * d << endl;
+    cout<< cinco * cn << endl;
+    cout<< dez * dd << endl;
+    cout<< vinte * v << endl;
+    cout<< cinquenta * cq << endl;
+    cout<< cem * c << endl;
+    cout<< duzentos * dz << endl;
+    cout << "" <<endl;
+
+//GAVETA EXTERNA//
+
+    cout<< "Gaveta Externa:"<<endl;
+    cout<< gaveta << endl;
+    cout << "" <<endl;
 
 
 system("pause");
