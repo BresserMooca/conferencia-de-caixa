@@ -6,12 +6,17 @@ using namespace std;
 
 int main () {
 
-int cincoc, dezc, vintec, cinquentac, umreal, dois, cinco, dez, vinte, cinquenta, cem, duzentos, gaveta;
-int moedas, notas, user;
-float cc = 0.05, dc = 0.10, vc = 0.25, ccc = 0.50, um = 1, d = 2, cn = 5, dd = 10, v = 20, cq = 50, c = 100, dz = 200;
-float total;
+float umreal, dois, cinco, dez, vinte, cinquenta, cem, duzentos;
+float cincoc, dezc, vintec, cinquentac;
+float cc = 0.05, dc = 0.10, vc = 0.25, ccc = 0.50, um = 1, d = 2, cn = 5, dd = 10, v = 20, cq = 50, c = 100, dz = 200, gaveta;
 
-cout << "Seja bem vindo ao assitente de caixa"<<endl;
+//SAUDAÇÕES//
+  cout << "Seja bem vindo ao assitente de conferencia de caixa"<<endl;
+  cout << "" <<endl;
+  cout << "By: Bresser.Inc - Github: https://github.com/BresserMooca" <<endl;
+  cout << "" <<endl;
+  cout << "Um presente para a Happen Idiomas" << endl;
+  cout << "" <<endl;
 
 
 //MOEDAS//
@@ -47,13 +52,15 @@ cout << "Seja bem vindo ao assitente de caixa"<<endl;
 
 //MENOR GAVETA//
     cout << "Menor gaveta:" << endl;
-    cout <<  cincoc * cc  << endl;
+    cout << cincoc * cc << endl;
     cout << dezc * dc << endl;
     cout << vintec * vc << endl;
     cout << cinquentac * ccc << endl;
-    cout << umreal * um << endl;
+    cout << umreal * um << endl;;
     cout << "" <<endl;
-
+    cout<< "TOTAL MENOR GAVETA:" << endl;
+    cout<< (cincoc * cc) + (dezc * dc) + (vintec * vc) + (cinquentac * ccc) + (umreal * um) << endl;
+  cout << "" <<endl;
 //MAIOR GAVETA//
     cout << "Maior Gaveta:" <<endl;
     cout<< dois * d << endl;
@@ -64,12 +71,20 @@ cout << "Seja bem vindo ao assitente de caixa"<<endl;
     cout<< cem * c << endl;
     cout<< duzentos * dz << endl;
     cout << "" <<endl;
+    cout<< "TOTAL MAIOR GAVETA:" << endl;
+    cout << (dois * d) + (cinco * cn) + (dez * dd) + (vinte * v) + (cinquenta * cq) + (cem * c) + (duzentos * dz) <<endl;
+    cout << "" <<endl;
+    cout << "" <<endl;
 
 //GAVETA EXTERNA//
     cout<< "Gaveta Externa:"<<endl;
     cout<< gaveta << endl;
     cout << "" <<endl;
 
+//TOTAL//
+    cout << "TOTAL RECEPCAO:" << endl;
+    cout << (cincoc * cc) + (dezc * dc) + (vintec * vc) + (cinquentac * ccc) + (umreal * um) + (dois * d) + (cinco * cn) + (dez * dd) + (vinte * v) + (cinquenta * cq) + (cem * c) + (duzentos * dz) + (gaveta) <<endl;
+    cout << "" <<endl;
 
 system("pause");
 return 0;
